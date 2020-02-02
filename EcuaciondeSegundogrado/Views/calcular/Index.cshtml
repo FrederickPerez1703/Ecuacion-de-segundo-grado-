@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div style="background-color:darkgray; border-radius:30px; opacity:0.98;">
+
+    <form action="/calcular/Index" method="post">
+        <div style="margin:auto">
+            <h1 style="text-align:center">Bienvenido  </h1>
+            <h2 style="text-align:center">Calculadora de ecuaciones de segundo grado</h2>
+            <div style="text-align:center"> <label for="valor1">valor A : </label> <input type="number" name="Numero1" id="valor1" required /></div>
+            <br />
+            <div style="text-align:center">  <label for="valor2">valor B : </label> <input type="number" name="Numero2" id="valor2" required /> </div>
+            <br />
+            <div style="text-align:center"> <label for="valor3">valor B: </label>  <input type="number" name="Numero3" id="valor3" required /> </div>
+            <br />
+            <div style="text-align:center"> <label for="resul">x1: </label> @ViewBag.resulfinal1 </div>
+            <br />
+            <div style="text-align:center"> <label for="resul">x2: </label> @ViewBag.resulfinal2 </div>
+            <br />
+
+
+            <div style=" margin:5px; text-align:center; height: 100px;">
+                <button style="font-size:20px; border-radius:100px;" type="submit">Calcular</button>
+              
+                <button style=" font-size:20px; border-radius:100px;" type="reset"> Limpiar</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+
